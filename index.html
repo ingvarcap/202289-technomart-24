@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-	<link href="css/style.css">
+	<link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
 	<header class="main_header">
 		<nav class="main_navigation">
 			<a class="main_header_logo">
-				<img src="index_logo.svg" width="250" height="50" alt="Логотип интернет-магазина "Техномарт" по продаже строительных материалов и инструментов для ремонта">
+				<img src="index_logo.svg" width="250" height="50" alt="Логотип интернет-магазина техномарт по продаже строительных материалов и инструментов для ремонта">
 			</a>
 			<ul class="user_navigation">
 				<li class="communication">Поиск</li>
@@ -19,7 +19,7 @@
 			</ul>
 			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 			<div class="connection">
-				<a href="#" class="telephon">+7(812) 555-05-55</a>
+				<a href="#" class="phone">+7(812) 555-05-55</a>
 				<p>г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</p>
 			</div>
 			<ul class="user_registration">
@@ -29,7 +29,7 @@
 			<ul class="site_navigation">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Компания</a></li>
-				<li><a href="#">Каталог</a></li>
+				<li><a href="inner.html">Каталог</a></li>
 				<li><a href="#">Новости</a></li>
 				<li><a href="#">Спецпредложения</a></li>
 				<li><a href="#">Доставка</a></li>
@@ -39,6 +39,7 @@
 	</header>
 	<main class="container">
 		<section class="about company">
+			<h2 class="visual_hidden">о компании</h2>
 			<p>Настоящий мужской шоппинг начинается здесь!Огромный выбор товаров для ремонта и <br>
 			строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
 			</p>
@@ -53,6 +54,7 @@
 			<a href="#" class="btn">подробнее о компании</a>
 		</section>
 		<section class="contacts">
+			<h2 class="visual_hidden">контакты</h2>
 			<p>Вы можете забрать товар сами,<br>
 			заехав в наш офис</p>
 			<!--Всплывающее окно?-->
@@ -61,7 +63,7 @@
 	</main>
 	<footer class="main_footer">
 		<a class="main_header_logo">
-			<img src="index_logo.svg" width="250" height="50" alt="Логотип интернет-магазина "Техномарт" по продаже строительных материалов и инструментов для ремонта">
+			<img src="index_logo.svg" width="250" height="50" alt="Логотип интернет-магазина техномарт по продаже строительных материалов и инструментов для ремонта">
 		</a>
 		<nav class="footer_navigation">
 			<ul class="footer_navigation_list">
@@ -72,7 +74,7 @@
 				<li><a href="#">Контакты</a></li>
 			</ul>
 		</nav>
-		<p>г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</br>
+		<p>г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8<br>
 		+7(812) 555-05-55</p>
 		<ul class="merchandise">
 			<li>Материалы</li>
@@ -84,9 +86,11 @@
 			<p>&copy;2010-2017 Компания "Техномарт"<br>
 			Все права защищены</p>
 			<div class="social_media">
-				<li><a class="social_btn" href="#">В контакте</a></li>
-				<li><a class="social_btn" href="#">Фейсбук</a></li>
-				<li><a class="social_btn" href="#">Инстаграмм</a></li>
+				<ul class="social">
+					<li><a class="social_btn" href="#">В контакте</a></li>
+					<li><a class="social_btn" href="#">Фейсбук</a></li>
+					<li><a class="social_btn" href="#">Инстаграмм</a></li>
+				</ul>
 			</div>
 			<div class="feedback">
 				<p>
