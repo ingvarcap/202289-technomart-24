@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.main_navigation .top_nav {
+	background-color: #293449;
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
+}
+.main_navigation img {
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ee3643;
+}
+.main_navigation .search {
+	background-image: url(img/icon-search.svg);
+	width: 71px;
+	height: 71px;
+	color: #6a7180;
+}
+
