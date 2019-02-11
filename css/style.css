@@ -1,3 +1,8 @@
+html { box-sizing: border-box;
+}
+*, *::before, *::after { box-sizing: inherit;
+}
+
 body {
 	margin: 0;
 	font-family: "Cuprum", "PT Sans", Arial, sans-serif;
@@ -5,6 +10,9 @@ body {
 	line-height: 24px;
 	font-weight: 400;
 	text-transform: uppercase;
+}
+img {
+	max-width: 100%;
 }
 a {
 	text-decoration: none;
@@ -17,16 +25,105 @@ a {
 	line-height: 18px;
 	color: #ffffff;
 }
-.main_navigation img {
+.main_header_logo img {
 	font-size: 17px;
 	line-height: 18px;
 	color: #ffffff;
 	background-color: #ee3643;
 }
-.main_navigation .search {
-	background-image: url(img/icon-search.svg);
-	width: 71px;
-	height: 71px;
-	color: #6a7180;
+.main_header_logo a {
+	background-image: url(../img/logo-technomart.svg);
 }
+.main_header_logo img:hover {
+	background: #ca2c37;
+}
+.main_header_logo img:active {
+	background: #ba2732;
+}
+.top_nav input {
+	color: #ffffff;
+	background-color: #293449;
+	border: none;
+	margin-left: 30px;
+}
+.top_nav form {
+	background-image: url(../img/icon-search.svg);
+	width: 17px;
+	height: 17px;
+	background-color: #293449;
+	color: #ffffff;
+	border: none;
+}
+.top_nav .bookmarks {
+	background-image: url(../img/icon-bookmark.svg);
+	width: 17px;
+	height: 17px;
+}
+
+.top_nav .cart {
+	background-image: url(../img/icon-cart.svg);
+	width: 17px;
+	height: 17px;
+}
+.top_nav .order {
+	background-color: #63a63e;
+}
+.bookmarks a:hover,
+.cart a:hover,
+.search input:hover {
+	background-color: #212a3a; 
+}
+.bookmarks a:active,
+.cart a:active {
+	background-color: #161d29;
+}
+.order a:hover {
+	background-color: #5fbb2d;
+}
+.order a:active {
+	background-color: #518534;
+}
+.search input:focus {
+	background-color: #ffffff;
+	color: #000000;
+}
+/*MIDDLE_NAV*/
+.middle_nav {
+	background-color: #f3f7f8;
+}
+.middle_nav h1 {
+	font-family: "Cuprum";
+	font-style:italic;
+	font-size: 16px;
+	line-height: 23px;
+	text-transform:lowercase;
+	color: #ee3643;
+}
+.connection a {
+	background-image: url(../img/icon-phone.svg);
+	background-repeat: no-repeat;
+	width: 17px;
+	height: 17px;
+	color: #ee3643;
+	border: solid 3px #ffffff;
+}
+.connection p {
+	color: #32425c;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform:uppercase;
+}
+.user_registration input {
+	background-color: #ffffff;
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+	border: none;
+}
+.access input {
+	background-image: url(../img/icon-login.svg);
+	width: 17px;
+	height: 17px;
+}
+
 
