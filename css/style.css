@@ -16,7 +16,6 @@ img {
 }
 a {
 	text-decoration: none;
-	color: #ffffff;
 }
 
 .main_navigation .top_nav {
@@ -40,16 +39,18 @@ a {
 .main_header_logo img:active {
 	background: #ba2732;
 }
+.top_nav a {
+	color: #ffffff;
+}
 .top_nav input {
 	color: #ffffff;
 	background-color: #293449;
 	border: none;
 	margin-left: 30px;
 }
-.top_nav form {
+.top_nav input {
 	background-image: url(../img/icon-search.svg);
-	width: 17px;
-	height: 17px;
+	background-repeat: no repeat;
 	background-color: #293449;
 	color: #ffffff;
 	border: none;
@@ -125,5 +126,37 @@ a {
 	width: 17px;
 	height: 17px;
 }
-
-
+/*NAV_BOTTOM*/
+.nav_bottom {
+	background-color: #f3f7f9;
+	font-size: 17px;
+	line-height: 17px;
+	color: #ffffff;
+}
+.nav_bottom li {
+	background-color: #32425c;
+	list-style: none;
+}
+.nav_bottom li:hover {
+	background-color: #293449;
+}
+.nav_bottom li:active {
+	background-color: #1d2739;
+}
+/*MAIN*/
+.container .btn {
+	background-color: #ee3643;
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+	border: none;
+}
+h2 {
+	font-size: 30px;
+	line-height: 30px;
+}
+.about_company p {
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
