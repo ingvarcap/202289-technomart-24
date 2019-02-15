@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cuprum|PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,700,700i|PT+Sans:400,700&subset=cyrillic');
 html { box-sizing: border-box;
 }
 *, *::before, *::after { box-sizing: inherit;
@@ -6,7 +6,7 @@ html { box-sizing: border-box;
 
 body {
 	margin: 0;
-	font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -135,7 +135,7 @@ a {
 	background-color: #f3f7f8;
 }
 .middle_nav h1 {
-	font-family: "Cuprum";
+	font-family: "Cuprum", Arial, sans-serif;
 	font-style:italic;
 	font-size: 16px;
 	line-height: 23px;
@@ -209,7 +209,7 @@ a {
 /*MAIN*/
 .about_company .btn,
 .contacts .btn{
-	font-family: "Cuprum", sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	background-color: #ee3643;
 	font-size: 14px;
 	line-height: 18px;
@@ -220,10 +220,10 @@ a {
 .contacts h2 {
 	font-size: 30px;
 	line-height: 30px;
-	font-family: "Cuprum", sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 }
 .contacts, .about_company p {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 }
@@ -330,7 +330,7 @@ a {
 	color: #c5cad0;
 }
 .inner_links {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	color: #000000;
 	font-size: 13px;
 	line-height: 18px;
@@ -345,13 +345,13 @@ a {
 }
 .container h2 {
 	background-color: #f2f6f8;
-	font-family: "Cuprum", sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 }
 
 .maker {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 }
 .maker label {
 	font-size: 17px;
@@ -363,7 +363,7 @@ a {
 	line-height: 20px;
 }
 .type {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 }
 .type p {
 	font-size: 17px;
@@ -387,13 +387,13 @@ a {
 	border: 1px solid #e5e5e5;
 }
 .perforator li h3 {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 18px;
 	line-height:20px;
 	font-weight: bold;
 }
 .instruments_perforator p {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
