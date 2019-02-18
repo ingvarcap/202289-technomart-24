@@ -4,31 +4,46 @@ html {
 }
 *, *::before, *::after { box-sizing: inherit;
 }
-
 body {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
 	text-transform: uppercase;
-
+	margin: 0;
+	padding: 0;
 }
 img {
 	max-width: 100%;
+	height:auto;
 }
 a {
 	text-decoration: none;
 }
-.visually_hidden {
-	display: none;
+.visually_hidden:not(:focus):not(:active) {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 .main_header {
 	background: #f3f7f8;
+	width: 1200px;
+	margin: 0 auto;
 }
 .main_navigation .top_nav {
 	background-color: #293449;
 	font-size: 17px;
 	line-height: 18px;
+}
+.main_header_logo {
+	margin-left: 130px;
 }
 .main_header_logo img {
 	font-size: 17px;
@@ -201,6 +216,11 @@ a {
 	background-color: #1d2739;
 }
 /*MAIN*/
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
 .about_company .btn,
 .contacts .btn{
 	font-family: "Cuprum", Arial, sans-serif;
@@ -227,6 +247,10 @@ a {
 	list-style: none;
 }
 /*FOOTER*/
+.main_footer {
+	width: 1200px;
+	margin: 0 auto;
+}
 .footer_top_1,
 .footer_top_2 {
 	background-color: #32425c;
@@ -409,18 +433,11 @@ a {
 	justify-content: space-between;
 	align-items: center;
 }
-
-/*ОБНУЛЕНИЕ */
 .top_nav,
 .middle_nav,
 .nav_bottom {
 	margin: 0;
 	padding: 0;
-}
-.wrapper {
-	width: 940px;
-	margin: 0 auto;
-	padding: 0 10px;
 }
 .middle_nav {
 	display: flex;
@@ -447,9 +464,6 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-.visually_hidden {
-	display: none;
 }
 .footer_top_1,
 .footer_top_2 {
@@ -486,8 +500,8 @@ a {
 }
 .instruments_perforator .perforator {
 	display: flex;
-	justify-content: space-between;
 	align-items: stretch;
+	align-content: stretch;
 	flex-wrap: wrap;
 }
 .instruments_perforator {
@@ -509,6 +523,14 @@ a {
 }
 .container {
 	margin-bottom: 85px;
+}
+/*обертка*!!!!!!!!!!!!!!!!*/
+.wrapper {
+	width: 1200px;
+}
+.main_navigation {
+	display: flex;
+	flex-direction: column;
 }
 
 
