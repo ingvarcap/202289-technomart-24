@@ -20,11 +20,12 @@ img {
 a {
 	text-decoration: none;
 }
-.wrapper {
+.inner {
 	width: 940px; 
 	margin: 0 auto; 
 	padding: 0 10px;
 }
+
 .visually_hidden:not(:focus):not(:active) {
 	position: absolute;
 	width: 1px;
@@ -248,6 +249,12 @@ a {
 	list-style: none;
 }
 /*FOOTER*/
+.main_footer {
+	background-color: #293449;
+}
+.footer_top {
+	background-color: #32425c;
+}
 .footer_top_1,
 .footer_top_2 {
 	background-color: #32425c;
@@ -518,6 +525,9 @@ a {
 .container {
 	margin-bottom: 85px;
 }
+
+
+
 
 
 
