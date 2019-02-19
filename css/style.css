@@ -42,7 +42,7 @@ a {
 	background: #f3f7f8;
 }
 
-.main_navigation .top_nav {
+.top_nav {
 	background-color: #293449;
 	font-size: 17px;
 	line-height: 18px;
@@ -142,8 +142,8 @@ a {
 .search input:focus {
 	background-image: url(../img/icon-search-focus.svg);
 }
-/*MIDDLE_NAV*/
-.middle_nav h1 {
+/*header_contacts*/
+.header_contacts h1 {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-style:italic;
 	font-size: 16px;
@@ -194,23 +194,23 @@ a {
 .user_registration a:active {
 	color: #cacaca;
 }
-/*NAV_BOTTOM*/
-.nav_bottom {
+/*NAV*/
+.main_nav {
 	background-color: #f3f7f8;
 	font-size: 17px;
 	line-height: 17px;
 }
-.nav_bottom a {
+.main_nav a {
 	color: #ffffff;
 }
-.nav_bottom li {
+.main_nav li {
 	background-color: #32425c;
 	list-style: none;
 }
-.nav_bottom li:hover {
+.main_nav li:hover {
 	background-color: #293449;
 }
-.nav_bottom li:active {
+.main_nav li:active {
 	background-color: #1d2739;
 }
 /*MAIN*/
@@ -400,29 +400,29 @@ a {
 	background: #fff;
 	border: 1px solid #e5e5e5;
 }
-.perforator {
+.product {
 	list-style: none;
 }
-.perforator li {
+.product li {
 	border: 1px solid #e5e5e5;
 }
-.perforator li h3 {
+.product li h3 {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 18px;
 	line-height:20px;
 	font-weight: bold;
 }
-.instruments_perforator p {
+.catalog p {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
 }
-.instruments_perforator .price {
+.catalog.price {
 	color: #999999;
 	text-decoration: line-through;
 }
- .instruments_perforator .discount_price {
+ .catalog.discount_price {
 	background-image: url(../img/red-button.svg);
 	color: #fff;
 }
@@ -435,37 +435,35 @@ a {
 	justify-content: space-between;
 	align-items: center;
 }
-.top_nav,
-.middle_nav,
-.nav_bottom {
+.top_nav {
 	margin: 0;
 	padding: 0;
 }
-.middle_nav {
+.header_contacts {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.middle_nav h1,
-.middle_nav .connection,
-.middle_nav .user_registration 
-.middle_nav.user_account{
+.header_contacts h1,
+.header_contacts .connection,
+.header_contacts .user_registration 
+.header_contacts .user_account{
 	width: 300px;
 }
-.site_navigation {
+.main_nav ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0;
 	padding: 0;
 }
-.site_navigation .main_list {
+.main_nav .nav_item {
 	width: 100%;
 }
 .container {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: stretch;
 }
 .footer_top_1,
 .footer_top_2 {
@@ -500,32 +498,32 @@ a {
 .main_filter .filter {
 	width: 230px;
 }
-.instruments_perforator .perforator {
+.catalog .product {
 	display: flex;
 	align-items: stretch;
 	align-content: stretch;
 	flex-wrap: wrap;
 }
-.instruments_perforator {
+.catalog {
 	width: 700px;
 }
-.perforator .perforator_list {
+.product .product_item {
 	width: 220px;
 }
+
 /*margin*/
 
-
-.inner .middle_nav {
+.header_contacts {
 	margin-bottom: 40px;
 }
 .top_nav {
 	margin-bottom: 45px;
 }
-.container {
-	margin-top: 10px;
-}
-.inner .nav_bottom {
+.main_nav {
 	margin-bottom: 60px;
+}
+.main_header {
+	padding:1px 0;
 }
 
 
