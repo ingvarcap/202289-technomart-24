@@ -143,9 +143,6 @@ a {
 	background-image: url(../img/icon-search-focus.svg);
 }
 /*MIDDLE_NAV*/
-.middle_nav {
-	background-color: #f3f7f8;
-}
 .middle_nav h1 {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-style:italic;
@@ -517,21 +514,20 @@ a {
 }
 /*margin*/
 
-.container {
-	margin-bottom: 85px;
-}
-.main_header {
-	margin-bottom: 80px;
-}
+
 .inner .middle_nav {
 	margin-bottom: 40px;
-}
-.inner .nav_bottom {
-	margin-bottom: 60px;
 }
 .top_nav {
 	margin-bottom: 45px;
 }
+.container {
+	margin-top: 10px;
+}
+.inner .nav_bottom {
+	margin-bottom: 60px;
+}
+
 
 
 
