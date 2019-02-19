@@ -64,7 +64,6 @@ a {
 }
 
 /*TOP_NAV*/
-
 .top_nav a{
 	color: #ffffff;
 }
@@ -432,8 +431,10 @@ a {
 }
 
 /*СЕТКИ*/
-.top_nav {
+
+.top_nav .inner {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -516,15 +517,23 @@ a {
 }
 /*margin*/
 
-.top_nav {
-	margin-bottom: 45px;
-}
-.middle_nav {
-	margin-bottom: 45px;
-}
 .container {
 	margin-bottom: 85px;
 }
+.main_header {
+	margin-bottom: 80px;
+}
+.inner .middle_nav {
+	margin-bottom: 40px;
+}
+.inner .nav_bottom {
+	margin-bottom: 60px;
+}
+.top_nav {
+	margin-bottom: 45px;
+}
+
+
 
 
 
