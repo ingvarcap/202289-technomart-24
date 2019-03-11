@@ -615,8 +615,79 @@ background-color: #35a9cc;
 /*БЛОК ИНФОРМАЦИИ*/
 
 .information {
-	background-size: 100%;
 	background-color: #f4f7f9;
+}
+
+.information p {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.service h2 {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+}
+
+
+
+.block_info input[type="radio"] {
+	opacity: 0;
+}
+
+.block_info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.block_info label {
+	display: block;
+	font-size: 21px;
+	line-height: 28px;
+	color: #ffffff;
+	width: 240px;
+	background: #32425c;
+	padding: 15px 20px;
+	border-top: 1px solid #405069;
+	border-bottom: 1px solid #293449;
+	cursor: pointer;
+}
+
+.text_info {
+	width: 620px;
+}
+
+.info {
+	display: none;
+	padding-bottom: 60px;
+}
+
+.btn_info:nth-child(1):checked ~ .text_info .info:nth-child(1) {
+	display: block;
+}
+
+.btn_info:nth-child(2):checked ~ .text_info .info:nth-child(2) {
+	display: block;
+}
+
+.btn_info:nth-child(3):checked ~ .text_info .info:nth-child(3) {
+	display: block;
+}
+
+.info_img_1 {
+	background-image: url(../img/service_1.png);
+	background-repeat: no-repeat;
+}
+
+.info_img_2 {
+	background-image: url(../img/service_2.png);
+	background-repeat: no-repeat;
+}
+
+.info_img_3 {
+	background-image: url(../img/service_3.png);
+	background-repeat: no-repeat;
 }
 
 
