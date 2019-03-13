@@ -556,15 +556,15 @@ background-color: #35a9cc;
 	display: inline-block;
 	width: 10px;
 	height: 10px;
-	background-color: #ee3643;
+	background-color: #ffffff;
 	border: 5px solid #ffffff;
 	border-radius: 50%;
 	margin-right: 5px;
 	cursor: pointer;
 }
 
-.slider_1 #radio_slider_1:checked + .slider_label label [for="radio_slider_1"],
-.slider_1 #radio_slider_2:checked + .slider_label label [for="radio_slider_2"]{
+#radio_slider_1:checked~.slider_label label[for="radio_slider_1"],
+#radio_slider_2:checked~.slider_label label[for="radio_slider_2"]{
 	background-color: #ee3643;
 }
 
