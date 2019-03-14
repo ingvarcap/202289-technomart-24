@@ -500,7 +500,37 @@ background-color: #35a9cc;
 	background-color: #e5ac40;
 }
 
-/*СЛАЙДЕР*/
+/*ПЕРВЫЙ СЛАЙДЕР*/
+
+.toggle_slider {
+	position: relative;
+}
+
+.toggle_label label {
+	position: absolute;
+	display: inline-block;
+	width: 22px;
+	height: 40px;
+	margin-right: 7px;
+	cursor: pointer;
+	top: 110px;
+}
+
+.toggle_label label:first-child {
+	background-image: url(../img/icon-left.svg);
+	left: 45px;
+}
+
+.toggle_label label:last-child {
+	background-image: url(../img/icon-left.svg);
+	left: 580px;
+}
+
+.toggle_label label:last-child {
+	background-image: url(../img/icon-right.svg);
+}
+
+/*ВТОРОЙ СЛАЙДЕР*/
 
 .slider_1,
 .slider_2 {
@@ -518,11 +548,11 @@ background-color: #35a9cc;
 
 .slider_1 {
 	background-image: url(../img/perforator.jpg);
+	display: none;
 }
 
 .slider_2 {
 	background-image: url(../img/drill.jpg);
-	display: none;
 }
 
 .slider_1 h3,
@@ -551,10 +581,6 @@ background-color: #35a9cc;
 	padding: 10px 45px 10px 50px;
 	margin-top: 120px;
 	margin-left: 25px;
-}
-
-.btn_slider {
-	position: relative;
 }
 
 .slider_label label {
@@ -1320,7 +1346,7 @@ fieldset {
 	border: 1px solid #e5e5e5;
 }
 
-
+/*КАТАЛОГ*/
 
 .catalog {
 	width: 700px;
@@ -1339,6 +1365,26 @@ fieldset {
 	list-style: none;
 }
 
+.product_item {
+	position: relative;
+}
+
+.product_item:active {
+	overflow: hidden;
+}
+
+.product_item:nth-child(3) .flag_new {
+	position: absolute;
+	content: "";
+	top: 0px;
+	left: 158px;
+}
+
+.product_item:nth-child(3) h3,
+.product_item:nth-child(6) h3,
+.product_item:nth-child(9) h3{
+	margin-bottom: 52px;
+}
 
 .product li:hover,
 .brand li:hover {
@@ -1351,6 +1397,7 @@ fieldset {
 	border: 1px solid #e5e5e5;
 	margin-bottom: 20px;
 }
+
 .product li h3,
 .popular_product li h3{
 	font-family: "PT Sans", Arial, sans-serif;
@@ -1359,6 +1406,7 @@ fieldset {
 	font-weight: 700;
 	padding: 0px 30px;
 }
+
 .catalog p,
 .popular_product p {
 	font-family: "PT Sans", Arial, sans-serif;
