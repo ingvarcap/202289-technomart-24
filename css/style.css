@@ -548,11 +548,11 @@ background-color: #35a9cc;
 
 .slider_1 {
 	background-image: url(../img/perforator.jpg);
-	display: none;
 }
 
 .slider_2 {
 	background-image: url(../img/drill.jpg);
+	display: none;
 }
 
 .slider_1 h3,
@@ -608,11 +608,11 @@ background-color: #35a9cc;
 	background-color: #ee3643;
 }
 
-#radio_slider_1:checked ~ .slider_1 {
+#radio_slider_1:checked ~ .slider_list .slider_1 {
 	display: block;
 }
 
-#radio_slider_2:checked ~ .slider_2 {
+#radio_slider_2:checked ~ .slider_list .slider_2 {
 	display: block;
 }
 
@@ -1369,8 +1369,18 @@ fieldset {
 	position: relative;
 }
 
-.product_item:active {
-	overflow: hidden;
+.active {
+	position: absolute;
+	top: 45px;
+	left: 45px;
+	width: 135px;
+	display: none;
+}
+
+.product_item .active .btn_buy:hover,
+.product_item .active .btn_bookmark:hover {
+	display: block;
+	width: 135px;
 }
 
 .product_item:nth-child(3) .flag_new {
@@ -1387,7 +1397,8 @@ fieldset {
 }
 
 .product li:hover,
-.brand li:hover {
+.brand li:hover,
+.popular_item li:hover {
 	box-shadow: 0 8px 25px 5px #c0c0c0;
 }
 
