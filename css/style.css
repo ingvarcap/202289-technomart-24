@@ -456,6 +456,10 @@ ul {
 	border-radius: 3px;
 }
 
+.features_item_4 {
+	margin-bottom: 26px;
+}
+
 .features_item_1 {
 	background-color: #ffbf47;
 }
@@ -498,24 +502,42 @@ background-color: #35a9cc;
 
 /*СЛАЙДЕР*/
 
-.slider_1 {
+.slider_1,
+.slider_2 {
 	position: relative;
 	width: 620px;
-	background-image: url(../img/perforator.jpg);
 	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
 }
 
-.slider_1 h3 {
+.slider_1 input,
+.slider_2 input{
+	display: none
+}
+
+.slider_1 {
+	background-image: url(../img/perforator.jpg);
+}
+
+.slider_2 {
+	background-image: url(../img/drill.jpg);
+	display: none;
+}
+
+.slider_1 h3,
+.slider_2 h3 {
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 400;
 	text-transform: uppercase;
 	padding-top: 25px;
 	padding-left: 25px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
-.slider_1 p {
+.slider_1 p,
+.slider_2 p {
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
@@ -523,51 +545,50 @@ background-color: #35a9cc;
 	margin: 0;
 }
 
-.slider_1 .btn {
+.slider_1 .btn,
+.slider_2 .btn {
 	width: 195px;
 	padding: 10px 45px 10px 50px;
-	margin-top: 115px;
+	margin-top: 120px;
 	margin-left: 25px;
 }
 
-.slider_1::before {
-	position: absolute;
-	content: "";
-	background-image: url(../img/icon-left.svg);
-	width: 22px;
-	height: 40px;
-	top: 115px;
-	left: 25px;
+.btn_slider {
+	position: relative;
 }
-
-.slider_1::after {
-	position: absolute;
-	content: "";
-	background-image: url(../img/icon-right.svg);
-	width: 22px;
-	height: 40px;
-	top: 115px;
-	left: 578px;
-}
-
-
 
 .slider_label label {
 	display: inline-block;
 	width: 10px;
 	height: 10px;
+	vertical-align: top;
 	background-color: #ffffff;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
-	margin-right: 5px;
+	margin-right: 7px;
 	cursor: pointer;
 }
 
+.slider_label {
+	position: absolute;
+	top: 225px;
+	left: 295px;
+}
+
 #radio_slider_1:checked ~ .slider_label label[for="radio_slider_1"],
-#radio_slider_2:checked ~ .slider_label label[for="radio_slider_2"]{
+#radio_slider_2:checked ~ .slider_label label[for="radio_slider_2"],
+#radio_slider_3:checked ~ .slider_label label[for="radio_slider_3"],
+#radio_slider_4:checked ~ .slider_label label[for="radio_slider_4"]{
 	background-color: #ee3643;
 }
 
+#radio_slider_1:checked ~ .slider_1 {
+	display: block;
+}
+
+#radio_slider_2:checked ~ .slider_2 {
+	display: block;
+}
 
 /*POPULAR*/
 
