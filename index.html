@@ -62,38 +62,40 @@
 						<h3>Техника</h3>
 						<button class="btn-features">для стройки</button>
 					</div>
-						<div class="features_item slider_1">
-							<h3>перфораторы</h3>
-							<p>Настоящие мужские игрушки</p>
-							<button class="btn">открыть каталог</button>
-								<input class="toggle" type="radio" id="toggle_1" name="toggle_slider" value="" checked>
-								<input class="toggle" type="radio" id="toggle_2" name="toggle_slider" value="">
-								<div class="toggle_label">
-									<label for="toggle_1"></label>
-									<label for="toggle_2"></label>
+						<div class="slider_list">
+							<div class="features_item slider_1">
+								<h3>перфораторы</h3>
+								<p>Настоящие мужские игрушки</p>
+								<button class="btn">открыть каталог</button>
+									<input class="toggle" type="radio" id="toggle_1" name="toggle_slider" value="" checked>
+									<input class="toggle" type="radio" id="toggle_2" name="toggle_slider" value="">
+									<div class="toggle_label">
+										<label for="toggle_1"></label>
+										<label for="toggle_2"></label>
+									</div>
+								<input class="radio_slider" type="radio" id="radio_slider_1" name="radio_slider" value="" checked>
+								<input class="radio_slider" type="radio" id="radio_slider_2" name="radio_slider" value="">
+								<div class="slider_label">
+									<label for="radio_slider_1"></label>
+									<label for="radio_slider_2"></label>
 								</div>
-							<input class="radio_slider" type="radio" id="radio_slider_1" name="radio_slider" value="" checked>
-							<input class="radio_slider" type="radio" id="radio_slider_2" name="radio_slider" value="">
-							<div class="slider_label">
-								<label for="radio_slider_1"></label>
-								<label for="radio_slider_2"></label>
 							</div>
-						</div>
-						<div class="features_item slider_2">
-							<h3>дрели</h3>
-							<p>Соседям на радость</p>
-							<button class="btn">открыть каталог</button>
-								<input class="toggle" type="radio" id="toggle_3" name="toggle_slider" value="">
-								<input class="toggle" type="radio" id="toggle_4" name="toggle_slider" value="" checked>
-								<div class="toggle_label">
-									<label for="toggle_3"></label>
-									<label for="toggle_4"></label>
+							<div class="features_item slider_2">
+								<h3>дрели</h3>
+								<p>Соседям на радость</p>
+								<button class="btn">открыть каталог</button>
+									<input class="toggle" type="radio" id="toggle_3" name="toggle_slider" value="">
+									<input class="toggle" type="radio" id="toggle_4" name="toggle_slider" value="" checked>
+									<div class="toggle_label">
+										<label for="toggle_3"></label>
+										<label for="toggle_4"></label>
+									</div>
+								<input class="radio_slider" type="radio" id="radio_slider_3" name="radio_slider" value="" >
+								<input class="radio_slider" type="radio" id="radio_slider_4" name="radio_slider" value="" checked>
+								<div class="slider_label">
+									<label for="radio_slider_3"></label>
+									<label for="radio_slider_4"></label>
 								</div>
-							<input class="radio_slider" type="radio" id="radio_slider_3" name="radio_slider" value="" >
-							<input class="radio_slider" type="radio" id="radio_slider_4" name="radio_slider" value="" checked>
-							<div class="slider_label">
-								<label for="radio_slider_3"></label>
-								<label for="radio_slider_4"></label>
 							</div>
 						</div>
 					<div class="materials_delivery">
@@ -117,30 +119,45 @@
 						</div>
 						<div class="popular_catalog">
 							<ul class="popular_product">
-								<li class="popular_item">
+								<li class="product_item">
+									<div class="active">
+										<button class="btn_buy">купить</button>
+										<button class="btn_bookmark">в закладки</button>
+									</div>
 									<img src="img/perforator_4.png" alt="перфораторы">
 									<h3>Перфоратор BOSCH <p>BFG 9000</p></h3>
 									<p class="price">32500 Р.</p>
-									<p class="discount_price">22500</p>
+									<p class="discount_price">22500 Р.</p>
 								</li>
-								<li class="popular_item">
+								<li class="product_item">
+									<div class="active">
+										<button class="btn_buy">купить</button>
+										<button class="btn_bookmark">в закладки</button>
+									</div>
 									<img src="img/perforator_1.jpg" alt="перфораторы">
 									<h3>Перфоратор BOSH <p>BFG 3000</p></h3>
 									<p class="price">22500 Р.</p>
-									<p class="discount_price">15500</p>
+									<p class="discount_price">15500 Р.</p>
 								</li>
-								<li class="popular_item">
+								<li class="product_item">
+									<div class="active">
+										<button class="btn_buy">купить</button>
+										<button class="btn_bookmark">в закладки</button>
+									</div>
 									<img src="img/perforator_2.jpg" alt="перфораторы">
 									<h3>Перфоратор BOSH <p>BFG 6000</p></h3>
 									<p class="price">30500 Р.</p>
-									<p class="discount_price">25500</p>
+									<p class="discount_price">25500 Р.</p>
 								</li>
-								<li class="popular_item">
+								<li class="product_item">
 									<img class="flag_new" src="img/flag_new.png" alt="новое">
+									<div class="active">
+										<button class="btn_buy">купить</button>
+										<button class="btn_bookmark">в закладки</button>
+									</div>
 									<img src="img/perforator_3.jpg" alt="перфораторы">
 									<h3>Перфоратор BOSH <p>BFG 2000</p></h3>
-									<p class="price">12500 Р.</p>
-									<p class="discount_price">15500</p>
+									<p class="discount_price">15500 Р.</p>
 								</li>
 							</ul>
 						</div>
@@ -228,25 +245,37 @@
 						<h2>контакты</h2>
 						<p>Вы можете забрать товар сами,
 						заехав в наш офис:</p>
-						<img src="img/map.png" width="300" height="158" alt="map">
+						<img src="img/map.png" width="300" height="158" alt="офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 						<button class="btn">заблудились? напишите нам</button>
-						<form class="modal modal_login visually_hidden" action="https://echo.htmlacademy.ru" method="post">
+						<section class="modal modal_login ">
+								<div class="name_mail">
+									<p>
+										<label  for="name" >Ваше Имя:</label>
+										<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+									</p>
+									<p>
+										<label for="email">Ваш e-mail:</label>
+										<input type="email" name="mail" id="email" placeholder="email@example.com">
+									</p>
+								</div>
+								<p class="textarea">
+									<label for="message">Текст письма:</label>
+									<textarea name="message" id="message" placeholder="В свободной форме" cols="70" rows="8">
+									
+									</textarea>
+								</p>
+								<div class="modal_login_btn">
+									<button class="btn" type="button">отправить</button>
+								</div>
+								<button class="modal_close" type="button">закрыть</button>
+						</section>
+						<section class="modal modal_map">
+							<h2 class="visually_hidden">как до нас добраться</h2>
 							<p>
-								<label  for="name" ><b>Ваше Имя:</b></label>
-								<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+								<img src="img/modal_map.jpg" width="940" height="450" alt="офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 							</p>
-							<p>
-								<label for="email"><b>Ваш e-mail:</b></label>
-								<input type="email" name="mail" id="email" placeholder="email@example.com">
-							</p>
-							<p>
-								<label for="message"><b>Текст письма:</b></label>
-								<textarea name="message" id="message" placeholder="В свободной форме" cols="70" rows="8">
-								
-								</textarea>
-							</p>
-							<input type="submit" name="btn">
-						</form>
+							<button class="modal_close" type="button">закрыть</button>
+						</section>
 					</section>
 				</div>
 			</main>

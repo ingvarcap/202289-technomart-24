@@ -22,9 +22,7 @@
 						</div>
 					</div>
 				<div class="header_contacts inner">
-					<span>Интернет-магазин
-					строительных материалов
-					и инструментов для ремонта</span>
+					<span>Интернет-магазин строительных материалов и инструментов для ремонта</span>
 					<div class="connection">
 						<a href="#" class="phone">+7(812) 555-05-55</a>
 						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -51,8 +49,8 @@
 						</nav>
 			</header>
 
-			<main class="container inner">
-				<section class="sorting">
+			<main class="container">
+				<section class="sorting inner">
 					<ul class="inner_links">
 						<li><a href="index.html"><img src="img/icon-home.svg" width="15" height="12" alt="home"></a></li>
 						<li><a href="#">каталог</a></li>
@@ -64,24 +62,32 @@
 					</div>
 					<div class="main_filter">
 						<div class="filter">
-							<div class="sorting_properties visually_hidden">
-								<span>сортировать:</span>
-								<ul>
-									<li><a href="#">по цене</a></li>
-									<li><a href="#">по типу</a></li>
-									<li><a href="#">по фунционалу</a></li>
-								</ul>
+							<h2>фильтр</h2>
+							<div class="filter_price">
+								<h3>цена:</h3>
+								<div class="range_controls">
+									<div class="scale">
+										<div class="bar">
+										</div>
+										<div class="toggle filter-button"></div>
+										<div class="toggle filter-button"></div>
+									</div>
+								</div>
+								<div class="price_controls">
+									<input class="min-price" type="text" value="0"> —
+									<input class="max-price" type="text" value="30 000">
+								</div>
 							</div>
 							<div class="maker">
 								<h3 class="visually_hidden">производители</h3>
 								<form action="https://echo.htmlacademy.ru" method="post">
 									<fieldset>
-										<legend>производители:</legend>
+										<p><legend>производители:</legend></p>
 										<p><input type="checkbox" name="maker1" id="maker1" checked><label for="maker1">bosch</label></p>
 										<p><input type="checkbox" name="maker2" id="maker2"><label for="maker2">интерскол</label></p>
 										<p><input type="checkbox" name="maker3" id="maker3" checked><label for="maker3">makita</label></p>
 										<p><input type="checkbox" name="maker4" id="maker4"><label for="maker4">dewalt</label></p>
-										<p><input type="checkbox" name="maker5" id="maker5"><label for="maker5">hitachi</label></p>
+										<p><input type="checkbox" name="maker5" id="maker5" disabled><label for="maker5" disabled>hitachi</label></p>
 									</fieldset>
 								</form>
 							</div>
@@ -89,7 +95,7 @@
 								<h3 class="visually_hidden">питание</h3>
 								<form action="https://echo.htmlacademy.ru" method="post">
 									<fieldset>
-										<legend>питание:</legend>
+										<p><legend>питание:</legend></p>
 										<p><input type="radio" name="power" value="accumulator" id="power1" checked><label for="power1">аккумуляторные</label></p>
 										<p><input type="radio" name="power" value="power_grid" id="power2"><label for="power2">сетевые</label></p>
 									</fieldset>
@@ -98,65 +104,139 @@
 							</div>
 						</div>
 						<div class="catalog">
+							<div class="sorting_properties ">
+								<span>сортировка:</span>
+								<ul>
+									<li><a href="#">по цене</a></li>
+									<li><a href="#">по типу</a></li>
+									<li><a href="#">по фунционалу</a></li>
+								</ul>
+							</div>
 							<ul class="product">
 								<li class="product_item">
-									<img src="img/perforator_1.jpg" alt="перфораторы">
-									<h3>Перфоратор BOSH <p>BFG 3000</p></h3>
-									<p class="price">22500 Р.</p>
-									<p class="discount_price">15500</p>
 									<div class="active">
 										<button class="btn_buy">купить</button>
 										<button class="btn_bookmark">в закладки</button>
 									</div>
+									<img src="img/perforator_1.jpg" alt="перфораторы">
+									<h3>Перфоратор BOSH </h3>
+									<p>BFG 3000</p>
+									<p class="price">22500 Р.</p>
+									<p class="discount_price">15500 Р.</p>
 								</li>
 								<li class="product_item">
+									<div class="active">
+										<button class="btn_buy">купить</button>
+										<button class="btn_bookmark">в закладки</button>
+									</div>
 									<img src="img/perforator_2.jpg" alt="перфораторы">
-									<h3>Перфоратор BOSH <p>BFG 6000</p></h3>
+									<h3>Перфоратор BOSH</h3>
+									 <p>BFG 6000</p>
 									<p class="price">30500 Р.</p>
-									<p class="discount_price">25500</p>
+									<p class="discount_price">25500 Р.</p>
 								</li>
 								<li class="product_item">
+									<div class="active">
+										<img class="flag_new" src="img/flag_new.png" alt="новое">
+										<button class="btn_buy">купить</button>
+										<button class="btn_bookmark">в закладки</button>
+									</div>
 									<img class="flag_new" src="img/flag_new.png" alt="новое">
 									<img src="img/perforator_3.jpg" alt="перфораторы">
-									<h3>Перфоратор BOSH <p>BFG 2000</p></h3>
-									<p class="discount_price">12500</p>
+									<h3>Перфоратор BOSH</h3>
+									<p>BFG 2000</p>
+									<p class="discount_price">12500 Р.</p>
 								</li>
 								<li class="product_item">
+									<div class="active">
+										<button class="btn_buy">купить</button>
+										<button class="btn_bookmark">в закладки</button>
+									</div>
 									<img src="img/perforator_1.jpg" alt="перфораторы">
-									<h3>Перфоратор BOSH <p>BFG 3000<p></h3>
+									<h3>Перфоратор BOSH</h3>
+									<p>BFG 3000<p>
 									<p class="price">22500 Р.</p>
-									<p class="discount_price">15500</p>
+									<p class="discount_price">15500 Р.</p>
 								</li>
 								<li class="product_item">
+									<div class="active">
+										<button class="btn_buy">купить</button>
+										<button class="btn_bookmark">в закладки</button>
+									</div>
 									<img src="img/perforator_2.jpg" alt="перфораторы">
-									<h3>Перфоратор BOSH <p>BFG 6000</p></h3>
+									<h3>Перфоратор BOSH</h3>
+									<p>BFG 6000</p>
 									<p class="price">30500 Р.</p>
-									<p class="discount_price">25500</p>
+									<p class="discount_price">25500 Р.</p>
 								</li>
 								<li class="product_item">
+									<div class="active">
+										<button class="btn_buy">купить</button>
+										<button class="btn_bookmark">в закладки</button>
+									</div>
 									<img src="img/perforator_3.jpg" alt="перфораторы">
-									<h3>Перфоратор BOSH <p>BFG 2000</p></h3>
-									<p class="discount_price">12500</p>
+									<h3>Перфоратор BOSH</h3>
+									<p>BFG 2000</p>
+									<p class="discount_price">12500 Р.</p>
 								</li>
 								<li class="product_item">
+									<div class="active">
+										<button class="btn_buy">купить</button>
+										<button class="btn_bookmark">в закладки</button>
+									</div>
 									<img src="img/perforator_1.jpg" alt="перфораторы">
-									<h3>Перфоратор BOSH <p>BFG 3000</p></h3>
+									<h3>Перфоратор BOSH</h3>
+									<p>BFG 3000</p>
 									<p class="price">22500 Р.</p>
-									<p class="discount_price">15500</p>
+									<p class="discount_price">15500 Р.</p>
 								</li>
 								<li class="product_item">
+									<div class="active">
+										<button class="btn_buy">купить</button>
+										<button class="btn_bookmark">в закладки</button>
+									</div>
 									<img src="img/perforator_2.jpg" alt="перфораторы">
-									<h3>Перфоратор BOSH <p>BFG 6000</p></h3>
+									<h3>Перфоратор BOSH</h3>
+									<p>BFG 6000</p>
 									<p class="price">30500 Р.</p>
-									<p class="discount_price">25500</p>
+									<p class="discount_price">25500 Р.</p>
 								</li>
 								<li class="product_item">
+									<div class="active">
+										<button class="btn_buy">купить</button>
+										<button class="btn_bookmark">в закладки</button>
+									</div>
 									<img src="img/perforator_3.jpg" alt="перфораторы">
-									<h3>Перфоратор BOSH <p>BFG 2000</p></h3>
-									<p class="discount_price">12500</p>
+									<h3>Перфоратор BOSH</h3>
+									<p>BFG 2000</p>
+									<p class="discount_price">12500 Р.</p>
 								</li>
 							</ul>
+							<div class="btn_list">
+								<button>1</button>
+								<button>2</button>
+								<button>3</button>
+								<button>следующая</button>
+							</div>
 						</div>
+					</div>
+				</section>
+				<section class="modal modal_buy">
+					<h2 class="visually_hidden">покупка товара</h2>
+					<p>Товар добавлен в корзину!</p>
+					<div class="btn_buy">
+						<button class="btn">оформить заказ</button>
+						<button class="btn">продолжить покупки</button>
+					</div>
+					<button class="modal_close" type="button">закрыть</button>
+				</section>
+				<section class="instruments_info">
+					<div class="inner">
+						<h2>пара слов о перфораторах</h2>
+						<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+						Существуют электромеханические и пневматические перфораторы.
+						Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+						В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 					</div>
 				</section>
 			</main>
@@ -188,8 +268,10 @@
 					</div>
 			</div>
 				<div class="footer_contacts inner">
-					<p>&copy;2010-2019 Компания "Техномарт"
-					Все права защищены</p>
+					<div class="copy">
+						<p>&copy;2010-2019 Компания "Техномарт"
+						Все права защищены</p>
+					</div>
 					<div class="social_media">
 								<a class="social_btn_vk" href="#">
 									<img src="img/icon-vk.svg" alt="vk">
