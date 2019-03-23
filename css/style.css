@@ -163,7 +163,7 @@ textarea {resize:horizontal;}
 
 .search label::before {
 	position: absolute;
-	background-image: url(../img/icon-search-main.svg);
+	background-image:url(../img/icon-search-main.svg);
 	background-repeat: no-repeat;
 	content: "";
 	width: 17px;
